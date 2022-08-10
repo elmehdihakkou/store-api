@@ -1,14 +1,19 @@
 package com.intCount.Store.business.service;
 
+import com.intCount.Store.application.service.StoreRepositoryService;
+import com.intCount.Store.business.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.intCount.Store.common.model.ItemsEntity;
+
+import java.util.List;
 
 @Service
 public class StoreRepositoryServiceIml implements StoreRepositoryService {
 	
 	
-	protected final Repository repository;
+	protected Repository repository;
 
 	@Autowired
 	public void VoteRepositoryServiceImpl(Repository repository) {
