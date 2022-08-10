@@ -27,7 +27,7 @@ public class StoreRepositoryServiceIml implements StoreRepositoryService {
 	
 	@Override
 	public List<ItemsEntity> getAllItems(){
-		return  repository.findAllItems();
+		return  repository.findAllItems()
 		
 	}
 	
