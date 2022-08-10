@@ -11,7 +11,7 @@ public class StoreRepositoryServiceIml implements StoreRepositoryService {
 	protected final Repository repository;
 
 	@Autowired
-	public VoteRepositoryServiceImpl(Repository repository) {
+	public void VoteRepositoryServiceImpl(Repository repository) {
 
 		if(repository == null) {
 			throw new IllegalArgumentException("repository is null");
